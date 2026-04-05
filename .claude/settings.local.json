@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(npm install:*)",
+      "Bash(grep -E '\\\\.\\(json|md|ts|js|mjs\\)$|^d')",
+      "Bash(wc:*)",
+      "Bash(npm audit:*)",
+      "Read(//usr/local/bin/**)",
+      "Read(//c/Users/masak/.nvm/versions/**)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/nodejs\")",
+      "Bash(npm test:*)",
+      "Bash(claude mcp:*)",
+      "WebFetch(domain:localhost)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(node -e \"require\\('puppeteer'\\)\")",
+      "Bash(node -e \"require\\('playwright'\\)\")",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(npx playwright:*)",
+      "Bash(node -e ':*)",
+      "Bash(node \"C:/Users/masak/AppData/Roaming/npm/node_modules/playwright/cli.js\" screenshot --browser chromium --wait-for-timeout 3000 http://localhost:3000 /tmp/screenshot_wait.png)",
+      "Bash(node \"/c/Users/masak/AppData/Roaming/npm/node_modules/@playwright/test/cli.js\" screenshot --browser chromium --wait-for-timeout 3000 http://localhost:3000 /tmp/screenshot_wait.png)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "playwright"
+  ]
+}
